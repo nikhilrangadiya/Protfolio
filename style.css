@@ -45,7 +45,7 @@
 }
 .facebook{
     fill    : #bbbbbb;
-    width: 1.3rem;
+    width: 1.5rem;
 }
 .linkdin{
     fill: #bbbbbb;
@@ -64,7 +64,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 3.4rem;
 }
 
 .content{
@@ -159,11 +159,11 @@ button:nth-child(2):hover{
 } */
 .circle:nth-child(2){
     width: 20rem;
-    /* background-image: url(./img/nikhil\ \(47kb\).jpg);
-    background-size: 100%; */
-    background-image: url(./img/IMG_20231029_113617890_AE.jpg);
+    background-image: url(./img/nikhil\ \(47kb\).jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
+    /* background-image: url(./img/IMG_20231029_113617890_AE.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; */
     border: 1rem solid white;
     box-shadow: 
     0 0 1rem #ffffff, 

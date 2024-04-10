@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .protfolio-container {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+        }
+
+        .navlist {
+            display: flex;
+            position: fixed;
+            gap: 3.5rem;
+            height: 15vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #262525;
+            min-inline-size: -webkit-fill-available;
+        }
+
+        .navlist li {
+            list-style: none;
+
+        }
+
+        .navlist li a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .navlist li a::after,
+        .navlist .active::after {
+            content: " ";
+            position: absolute;
+            background: #ffffff;
+            width: 100%;
+            height: .1rem;
+            left: 0;
+            bottom: -.5rem;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform .5s;
+        }
+
+        .navlist li a:hover::after,
+        .navlist .active::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="protfolio-container">
+        <ul class="navlist">
+            <li><a href="./index.html" >HOME</a></li>
+            <li><a href="./Work.html" >WORK</a></li>
+            <li><a href="./about.html" >ABOUT</a></li>
+            <li><a href="./project.html" class="active">PROJECT</a></li>
+            <li><a href="./Services.html">SERVICE</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
